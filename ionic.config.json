@@ -1,0 +1,7 @@
+{
+  "name": "CashBTN",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
