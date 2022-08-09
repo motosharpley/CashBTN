@@ -1,0 +1,16 @@
+.content-container {
+  background-repeat: no-repeat;
+  background-image: url('../assets/CashBTN-bg.png');
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100%;
+  padding: 20px;
+  margin: 0%;
+}
+
+.cta {
+  margin: 40px;
+  background-color: rgba(137, 43, 226, 0.342);
+  max-width: 420px;
+  padding: 30px;
+}
