@@ -10,18 +10,20 @@
 
 .cta {
   top: 5rem;
+  left: 2rem;
   background-color: rgba(137, 43, 226, 0.342);
   max-width: 420px;
-  padding: 30px;
+  padding: 40px;
   position: relative;
 }
 
 .plugins-container {
   min-height: 400px;
-  background-color: blueviolet;
-  padding-bottom: 40px;
+  background-color: rgba(137, 43, 226, 0.342);
+  padding: 40px;
 }
 
 #navHeader {
   position: fixed;
+  color: whitesmoke;
 }
