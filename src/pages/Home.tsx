@@ -8,13 +8,16 @@ import {
   IonContent,
   IonGrid,
   IonHeader,
+  IonIcon,
   IonImg,
   IonInput,
+  IonMenuButton,
   IonPage,
   IonRow,
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
+import { cashOutline, cashSharp, ticketOutline } from 'ionicons/icons';
 import { useState } from 'react';
 import './Home.css';
 
@@ -22,17 +25,24 @@ const Home: React.FC = () => {
   const [email, setEmail] = useState<string>();
   return (
     <IonPage>
+      <IonHeader>
+        <IonToolbar color={'medium'} id="navHeader">
+          <IonButtons slot="start">
+            <IonMenuButton />
+          </IonButtons>
+          <IonIcon slot="start" ios={cashOutline} md={cashSharp} />
+          <IonTitle slot="start">CashBTN</IonTitle>
+          <IonButtons>
+            <IonButton href="#home">Home</IonButton>
+            <IonButton href="#plugins">Plugins</IonButton>
+            <IonButton href="#developers">Developers</IonButton>
+            <IonButton href="#getStarted">Get Started</IonButton>
+          </IonButtons>
+        </IonToolbar>
+      </IonHeader>
       <IonContent>
         <div className="lander-container" id="Home">
-          <IonToolbar color={'medium'} id="navHeader">
-            <IonTitle slot="start">CashBTN</IonTitle>
-            <IonButtons slot="start">
-              <IonButton href="#home">Home</IonButton>
-              <IonButton href="#plugins">Plugins</IonButton>
-              <IonButton href="#developers">Developers</IonButton>
-            </IonButtons>
-            <IonButton color={'dark'}>Get Started</IonButton>
-          </IonToolbar>
+          <IonToolbar color={'medium'} id="navHeader"></IonToolbar>
           <div className="cta">
             <h3>Crypto Payments Made Easy</h3>
             <p>Simple Plugins for Any Platform</p>
@@ -93,7 +103,9 @@ const Home: React.FC = () => {
         <div className="subs-container" id="developers">
           <IonCard>
             <IonCardHeader>
-              <h3>Subscribe to get Promos Insider Early Access Features</h3>
+              <h3>
+                Subscribe to get Promos &#38; Insider Early Access Features
+              </h3>
               <p>
                 Subscribe to get the latest new feature updates and quick tips
                 for easy cash!
