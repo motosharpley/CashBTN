@@ -92,19 +92,23 @@ const Home: React.FC = () => {
         {/* Plugins Section End */}
         <div className="subs-container" id="developers">
           <IonCard>
-            <h3>Subscribe to get Promos Insider Early Access Features</h3>
-            <p>
-              Subscribe to get the latest new feature updates and quick tips for
-              easy cash!
-            </p>
-            <IonInput
-              value={email}
-              placeholder="Enter your email here"
-              onIonChange={(e) => setEmail(e.detail.value!)}
-              clearInput
-            >
-              <IonButton>Subscribe</IonButton>
-            </IonInput>
+            <IonCardHeader>
+              <h3>Subscribe to get Promos Insider Early Access Features</h3>
+              <p>
+                Subscribe to get the latest new feature updates and quick tips
+                for easy cash!
+              </p>
+            </IonCardHeader>
+            <IonCardContent>
+              <IonInput
+                value={email}
+                placeholder="Enter your email here"
+                onIonChange={(e) => setEmail(e.detail.value!)}
+                clearInput
+              >
+                <IonButton>Subscribe</IonButton>
+              </IonInput>
+            </IonCardContent>
           </IonCard>
         </div>
       </IonContent>
