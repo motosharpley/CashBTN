@@ -2,6 +2,7 @@ import {
   IonButton,
   IonButtons,
   IonCard,
+  IonCardContent,
   IonCardHeader,
   IonCol,
   IonContent,
@@ -42,16 +43,20 @@ const Home: React.FC = () => {
         </div>
         {/* Plugins Section Start */}
         <div className="plugins-container" id="plugins">
-          <IonTitle>Ready to Collect</IonTitle>
-          <p>How Will You Charge?</p>
           <IonGrid>
+            <IonTitle>Ready to Collect</IonTitle>
+            <p>How Will You Charge?</p>
             <IonRow>
               <IonCol>
                 <IonCard className="tips-card">
-                  <img src="../assets/light-purple-cube.png" />
-                  <h3>TipsBTN</h3>
-                  <p>0.0001eth</p>
-                  <p>Simple Configurable Tip Button</p>
+                  <IonCardHeader>
+                    <img src="../assets/light-purple-cube.png" />
+                  </IonCardHeader>
+                  <IonCardContent>
+                    <h3>TipsBTN</h3>
+                    <p>0.0001eth</p>
+                    <p>Simple Configurable Tip Button</p>
+                  </IonCardContent>
                 </IonCard>
               </IonCol>
               <IonCol>
@@ -59,21 +64,26 @@ const Home: React.FC = () => {
                   <IonCardHeader>
                     <img src="../assets/black-cube.png" />
                   </IonCardHeader>
-                  <h3>CashBTN</h3>
-                  <p>0.0001eth</p>
-                  <p>The works all your crypto payment needs</p>
+                  <IonCardContent>
+                    <h3>CashBTN</h3>
+                    <p>0.0001eth</p>
+                    <p>The works all your crypto payment needs</p>
+                  </IonCardContent>
                 </IonCard>
               </IonCol>
               <IonCol>
                 <IonCard className="tips-card">
-                  <img src="../assets/gold-cube.png" alt="" />
-
-                  <h3>SubBTN</h3>
-                  <p>0.0001eth</p>
-                  <p>
-                    Subscription based sign up button for recurring crypto
-                    payments
-                  </p>
+                  <IonCardHeader>
+                    <img src="../assets/gold-cube.png" alt="" />
+                  </IonCardHeader>
+                  <IonCardContent>
+                    <h3>SubBTN</h3>
+                    <p>0.0001eth</p>
+                    <p>
+                      Subscription based sign up button for recurring crypto
+                      payments
+                    </p>
+                  </IonCardContent>
                 </IonCard>
               </IonCol>
             </IonRow>
