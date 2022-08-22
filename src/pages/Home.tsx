@@ -2,10 +2,12 @@ import {
   IonButton,
   IonButtons,
   IonCard,
+  IonCardHeader,
   IonCol,
   IonContent,
   IonGrid,
   IonHeader,
+  IonImg,
   IonInput,
   IonPage,
   IonRow,
@@ -46,6 +48,7 @@ const Home: React.FC = () => {
             <IonRow>
               <IonCol>
                 <IonCard className="tips-card">
+                  <img src="../assets/light-purple-cube.png" />
                   <h3>TipsBTN</h3>
                   <p>0.0001eth</p>
                   <p>Simple Configurable Tip Button</p>
@@ -53,6 +56,9 @@ const Home: React.FC = () => {
               </IonCol>
               <IonCol>
                 <IonCard className="tips-card">
+                  <IonCardHeader>
+                    <img src="../assets/black-cube.png" />
+                  </IonCardHeader>
                   <h3>CashBTN</h3>
                   <p>0.0001eth</p>
                   <p>The works all your crypto payment needs</p>
@@ -60,6 +66,8 @@ const Home: React.FC = () => {
               </IonCol>
               <IonCol>
                 <IonCard className="tips-card">
+                  <img src="../assets/gold-cube.png" alt="" />
+
                   <h3>SubBTN</h3>
                   <p>0.0001eth</p>
                   <p>
