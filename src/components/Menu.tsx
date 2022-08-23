@@ -65,7 +65,7 @@ const Menu: React.FC = () => {
   return (
     <IonMenu contentId="main" type="overlay">
       <IonContent color="secondary">
-        <IonList id="inbox-list">
+        <IonList>
           <IonIcon slot="start" ios={cubeOutline} md={cubeSharp} />
 
           <IonListHeader>CashBTN</IonListHeader>
