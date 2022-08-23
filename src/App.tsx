@@ -31,11 +31,14 @@ import './theme/variables.css';
 import Menu from './components/Menu';
 
 setupIonicReact();
-
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonSplitPane contentId="main" when="xl">
+      <IonSplitPane
+        contentId="main"
+        when="xl"
+        onIonSplitPaneVisible={(e) => console.log(e.detail.visible)}
+      >
         <Menu />
         <IonRouterOutlet id="main">
           <Route exact path="/home">
