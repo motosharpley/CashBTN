@@ -41,7 +41,6 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent>
         <div className="lander-container" id="Home">
-          <IonToolbar color={'medium'} id="navHeader"></IonToolbar>
           <div className="cta">
             <h3>Crypto Payments Made Easy</h3>
             <p>Simple Plugins for Any Platform</p>
@@ -53,7 +52,6 @@ const Home: React.FC = () => {
         {/* Plugins Section Start */}
         <div className="plugins-container" id="plugins">
           <IonGrid>
-            <IonTitle>Ready to Collect</IonTitle>
             <p>How Will You Charge?</p>
             <IonRow>
               <IonCol>
@@ -103,11 +101,10 @@ const Home: React.FC = () => {
           <IonCard>
             <IonCardHeader>
               <h3>
-                Subscribe to get Promos &#38; Insider Early Access Features
+                Subscribe to get Promos, Insider, &#38; Early Access Features
               </h3>
               <p>
-                Subscribe to get the latest new feature updates and quick tips
-                for easy cash!
+                Get the latest new feature updates and quick tips for easy cash!
               </p>
             </IonCardHeader>
             <IonCardContent>
