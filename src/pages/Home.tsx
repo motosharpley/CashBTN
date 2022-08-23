@@ -9,7 +9,6 @@ import {
   IonGrid,
   IonHeader,
   IonIcon,
-  IonImg,
   IonInput,
   IonMenuButton,
   IonPage,
@@ -17,7 +16,7 @@ import {
   IonTitle,
   IonToolbar,
 } from '@ionic/react';
-import { cashOutline, cashSharp, ticketOutline } from 'ionicons/icons';
+import { cubeOutline, cubeSharp } from 'ionicons/icons';
 import { useState } from 'react';
 import './Home.css';
 
@@ -30,7 +29,7 @@ const Home: React.FC = () => {
           <IonButtons slot="start">
             <IonMenuButton />
           </IonButtons>
-          <IonIcon slot="start" ios={cashOutline} md={cashSharp} />
+          <IonIcon slot="start" ios={cubeOutline} md={cubeSharp} />
           <IonTitle slot="start">CashBTN</IonTitle>
           <IonButtons>
             <IonButton href="#home">Home</IonButton>
@@ -60,7 +59,7 @@ const Home: React.FC = () => {
               <IonCol>
                 <IonCard className="tips-card">
                   <IonCardHeader>
-                    <img src="../assets/light-purple-cube.png" />
+                    <img src="../assets/light-purple-cube.png" alt="" />
                   </IonCardHeader>
                   <IonCardContent>
                     <h3>TipsBTN</h3>
@@ -72,7 +71,7 @@ const Home: React.FC = () => {
               <IonCol>
                 <IonCard className="tips-card">
                   <IonCardHeader>
-                    <img src="../assets/black-cube.png" />
+                    <img src="../assets/black-cube.png" alt="" />
                   </IonCardHeader>
                   <IonCardContent>
                     <h3>CashBTN</h3>

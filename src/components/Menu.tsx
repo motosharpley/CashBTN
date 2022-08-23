@@ -16,6 +16,8 @@ import {
   codeSharp,
   constructOutline,
   constructSharp,
+  cubeOutline,
+  cubeSharp,
   extensionPuzzleOutline,
   extensionPuzzleSharp,
   homeOutline,
@@ -64,6 +66,8 @@ const Menu: React.FC = () => {
     <IonMenu contentId="main" type="overlay">
       <IonContent color="medium">
         <IonList id="inbox-list">
+          <IonIcon slot="start" ios={cubeOutline} md={cubeSharp} />
+
           <IonListHeader>CashBTN</IonListHeader>
           <IonNote>Crypto Payments Made Easy</IonNote>
           {appPages.map((appPage, index) => {

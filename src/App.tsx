@@ -26,6 +26,8 @@ import '@ionic/react/css/display.css';
 
 /* Theme variables */
 import './theme/variables.css';
+
+/* Components */
 import Menu from './components/Menu';
 
 setupIonicReact();
@@ -33,7 +35,7 @@ setupIonicReact();
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
-      <IonSplitPane contentId="main">
+      <IonSplitPane contentId="main" when="xl">
         <Menu />
         <IonRouterOutlet id="main">
           <Route exact path="/home">
