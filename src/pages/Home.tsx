@@ -117,7 +117,7 @@ const Home: React.FC = () => {
                 onIonChange={(e) => setEmail(e.detail.value!)}
                 clearInput
               >
-                <IonButton>Subscribe</IonButton>
+                <IonButton color={'tertiary'}>Subscribe</IonButton>
               </IonInput>
             </IonCardContent>
           </IonCard>
