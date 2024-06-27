@@ -32,10 +32,10 @@ const Home: React.FC = () => {
           <IonIcon slot="start" ios={cubeOutline} md={cubeSharp} />
           <IonTitle slot="start">CashBTN</IonTitle>
           <IonButtons>
-            <IonButton href="#home">Home</IonButton>
-            <IonButton href="#plugins">Plugins</IonButton>
-            <IonButton href="#developers">Developers</IonButton>
-            <IonButton href="#getStarted">Get Started</IonButton>
+            <IonButton href="/home">Home</IonButton>
+            <IonButton href="/plugins">Plugins</IonButton>
+            <IonButton href="/developers">Developers</IonButton>
+            <IonButton href="/get-started">Get Started</IonButton>
           </IonButtons>
         </IonToolbar>
       </IonHeader>
@@ -61,7 +61,7 @@ const Home: React.FC = () => {
                   </IonCardHeader>
                   <IonCardContent>
                     <h3>TipsBTN</h3>
-                    <p>0.0001eth</p>
+                    <p>1.00usdc</p>
                     <p>Simple Configurable Tip Button</p>
                   </IonCardContent>
                 </IonCard>
@@ -73,7 +73,7 @@ const Home: React.FC = () => {
                   </IonCardHeader>
                   <IonCardContent>
                     <h3>CashBTN</h3>
-                    <p>0.0001eth</p>
+                    <p>2.00usdc</p>
                     <p>The works all your crypto payment needs</p>
                   </IonCardContent>
                 </IonCard>
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
                   </IonCardHeader>
                   <IonCardContent>
                     <h3>SubBTN</h3>
-                    <p>0.0001eth</p>
+                    <p>3.00usdc</p>
                     <p>
                       Subscription based sign up button for recurring crypto
                       payments

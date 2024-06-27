@@ -41,19 +41,19 @@ const appPages: AppPage[] = [
   },
   {
     title: 'Plugins',
-    url: '/Plugins',
+    url: '/plugins',
     iosIcon: extensionPuzzleOutline,
     mdIcon: extensionPuzzleSharp,
   },
   {
     title: 'Developers',
-    url: '/Developers',
+    url: '/developers',
     iosIcon: codeOutline,
     mdIcon: codeSharp,
   },
   {
     title: 'Get Started',
-    url: '/GetStarted',
+    url: '/get-started',
     iosIcon: constructOutline,
     mdIcon: constructSharp,
   },
@@ -67,7 +67,6 @@ const Menu: React.FC = () => {
       <IonContent color="secondary">
         <IonList>
           <IonIcon slot="start" ios={cubeOutline} md={cubeSharp} />
-
           <IonListHeader>CashBTN</IonListHeader>
           <IonNote>Crypto Payments Made Easy</IonNote>
           {appPages.map((appPage, index) => {

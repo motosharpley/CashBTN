@@ -7,6 +7,9 @@ import {
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
 import Home from './pages/Home';
+import Plugins from './pages/Plugins';
+import Developers from './pages/Developers';
+import GetStarted from './pages/GetStarted';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -46,6 +49,15 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/">
             <Redirect to="/home" />
+          </Route>
+          <Route exact path="/plugins">
+            <Plugins />
+          </Route>
+          <Route exact path="/developers">
+            <Developers />
+          </Route>
+          <Route exact path="/get-started">
+            <GetStarted />
           </Route>
         </IonRouterOutlet>
       </IonSplitPane>
