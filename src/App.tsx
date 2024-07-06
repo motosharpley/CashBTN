@@ -6,10 +6,15 @@ import {
   setupIonicReact,
 } from '@ionic/react';
 import { IonReactRouter } from '@ionic/react-router';
+// Imoport Pages
 import Home from './pages/Home';
 import Plugins from './pages/Plugins';
 import Developers from './pages/Developers';
 import GetStarted from './pages/GetStarted';
+import Demo from './pages/Demo';
+import Checkout from './pages/Checkout';
+import DemoShop from './pages/DemoShop';
+import DemoPOS from './pages/DemoPOS';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -58,6 +63,18 @@ const App: React.FC = () => (
           </Route>
           <Route exact path="/get-started">
             <GetStarted />
+          </Route>
+          <Route exact path="/demo">
+            <Demo />
+          </Route>
+          <Route exact path="/checkout">
+            <Checkout />
+          </Route>
+          <Route exact path="/demo-shop">
+            <DemoShop />
+          </Route>
+          <Route exact path="/demo-pos">
+            <DemoPOS />
           </Route>
         </IonRouterOutlet>
       </IonSplitPane>

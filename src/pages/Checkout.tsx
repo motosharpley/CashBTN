@@ -1,6 +1,11 @@
 import { IonButtons, IonContent, IonMenuButton, IonPage } from '@ionic/react';
 
-const GetStarted: React.FC = () => {
+import { useParams } from 'react-router-dom';
+
+const Checkout: React.FC = () => {
+  const params = useParams<{}>();
+  console.log(params);
+
   return (
     <IonPage>
       <IonButtons slot="start">
@@ -8,11 +13,12 @@ const GetStarted: React.FC = () => {
       </IonButtons>
       <IonContent>
         <div>
-          <h1>Get Started</h1>
+          <h1>Checkout</h1>
+          <p>URL Parameter:</p>
         </div>
       </IonContent>
     </IonPage>
   );
 };
 
-export default GetStarted;
+export default Checkout;

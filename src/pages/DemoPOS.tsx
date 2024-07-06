@@ -1,6 +1,7 @@
 import { IonButtons, IonContent, IonMenuButton, IonPage } from '@ionic/react';
+import Products from '../components/Products';
 
-const GetStarted: React.FC = () => {
+const DemoPOS: React.FC = () => {
   return (
     <IonPage>
       <IonButtons slot="start">
@@ -8,11 +9,12 @@ const GetStarted: React.FC = () => {
       </IonButtons>
       <IonContent>
         <div>
-          <h1>Get Started</h1>
+          <h1>Demo POS</h1>
         </div>
+        <Products submitTarget="/checkout" enabled={true} />
       </IonContent>
     </IonPage>
   );
 };
 
-export default GetStarted;
+export default DemoPOS;

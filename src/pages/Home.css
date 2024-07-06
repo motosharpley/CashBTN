@@ -27,3 +27,7 @@
   position: fixed;
   color: whitesmoke;
 }
+
+.tips-card {
+  min-height: 309px;
+}

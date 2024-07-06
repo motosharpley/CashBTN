@@ -22,8 +22,11 @@ import {
   extensionPuzzleSharp,
   homeOutline,
   homeSharp,
+  playOutline,
+  playSharp,
 } from 'ionicons/icons';
 import './Menu.css';
+import { WalletMultiButton } from '@solana/wallet-adapter-react-ui';
 
 interface AppPage {
   url: string;
@@ -35,7 +38,7 @@ interface AppPage {
 const appPages: AppPage[] = [
   {
     title: 'Home',
-    url: '/',
+    url: '/home',
     iosIcon: homeOutline,
     mdIcon: homeSharp,
   },
@@ -57,6 +60,12 @@ const appPages: AppPage[] = [
     iosIcon: constructOutline,
     mdIcon: constructSharp,
   },
+  {
+    title: 'Demo',
+    url: '/demo',
+    iosIcon: playOutline,
+    mdIcon: playSharp,
+  },
 ];
 
 const Menu: React.FC = () => {
@@ -65,6 +74,7 @@ const Menu: React.FC = () => {
   return (
     <IonMenu contentId="main" type="overlay">
       <IonContent color="secondary">
+        <WalletMultiButton />
         <IonList>
           <IonIcon slot="start" ios={cubeOutline} md={cubeSharp} />
           <IonListHeader>CashBTN</IonListHeader>

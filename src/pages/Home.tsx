@@ -4,6 +4,7 @@ import {
   IonCard,
   IonCardContent,
   IonCardHeader,
+  IonCardTitle,
   IonCol,
   IonContent,
   IonGrid,
@@ -31,12 +32,13 @@ const Home: React.FC = () => {
           </IonButtons>
           <IonIcon slot="start" ios={cubeOutline} md={cubeSharp} />
           <IonTitle slot="start">CashBTN</IonTitle>
-          <IonButtons>
+          {/* <IonButtons>
             <IonButton href="/home">Home</IonButton>
             <IonButton href="/plugins">Plugins</IonButton>
             <IonButton href="/developers">Developers</IonButton>
             <IonButton href="/get-started">Get Started</IonButton>
-          </IonButtons>
+            <IonButton href="/demo">Demo</IonButton>
+          </IonButtons> */}
         </IonToolbar>
       </IonHeader>
       <IonContent>
@@ -57,7 +59,9 @@ const Home: React.FC = () => {
               <IonCol>
                 <IonCard className="tips-card">
                   <IonCardHeader>
-                    <img src="../assets/light-purple-cube.png" alt="" />
+                    <IonCardTitle>
+                      <img src="../assets/light-purple-cube.png" alt="" />
+                    </IonCardTitle>
                   </IonCardHeader>
                   <IonCardContent>
                     <h3>TipsBTN</h3>
@@ -69,7 +73,9 @@ const Home: React.FC = () => {
               <IonCol>
                 <IonCard className="tips-card">
                   <IonCardHeader>
-                    <img src="../assets/black-cube.png" alt="" />
+                    <IonCardTitle>
+                      <img src="../assets/black-cube.png" alt="" />
+                    </IonCardTitle>
                   </IonCardHeader>
                   <IonCardContent>
                     <h3>CashBTN</h3>
@@ -81,7 +87,9 @@ const Home: React.FC = () => {
               <IonCol>
                 <IonCard className="tips-card">
                   <IonCardHeader>
-                    <img src="../assets/gold-cube.png" alt="" />
+                    <IonCardTitle>
+                      <img src="../assets/gold-cube.png" alt="" />
+                    </IonCardTitle>
                   </IonCardHeader>
                   <IonCardContent>
                     <h3>SubBTN</h3>
