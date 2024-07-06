@@ -1,14 +1,37 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 import App from './App';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 import reportWebVitals from './reportWebVitals';
+// Solana Wallet Adapter & web3.js imports
+import {
+  ConnectionProvider,
+  WalletProvider,
+} from '@solana/wallet-adapter-react';
+import { WalletAdapterNetwork } from '@solana/wallet-adapter-base';
+import {
+  WalletModalProvider,
+  WalletDisconnectButton,
+  WalletMultiButton,
+} from '@solana/wallet-adapter-react-ui';
+import { clusterApiUrl } from '@solana/web3.js';
 
-ReactDOM.render(
+// Default styles that can be overridden by your app
+import '@solana/wallet-adapter-react-ui/styles.css';
+
+const container = document.getElementById('root');
+const root = createRoot(container!);
+
+root.render(
   <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <ConnectionProvider endpoint={clusterApiUrl('devnet')}>
+      <WalletProvider wallets={[]} autoConnect>
+        <WalletModalProvider>
+          <App />
+        </WalletModalProvider>
+      </WalletProvider>
+    </ConnectionProvider>
+  </React.StrictMode>
 );
 
 // If you want your app to work offline and load faster, you can change
