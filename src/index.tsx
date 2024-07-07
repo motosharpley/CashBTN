@@ -24,7 +24,11 @@ const root = createRoot(container!);
 
 root.render(
   <React.StrictMode>
-    <ConnectionProvider endpoint={clusterApiUrl('devnet')}>
+    <ConnectionProvider
+      endpoint={
+        'https://soft-weathered-valley.solana-devnet.quiknode.pro/968177985cf58861c3fd978967b5c529d7b05cb7/'
+      }
+    >
       <WalletProvider wallets={[]} autoConnect>
         <WalletModalProvider>
           <App />
