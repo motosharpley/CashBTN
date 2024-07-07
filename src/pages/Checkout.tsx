@@ -1,14 +1,10 @@
 import { IonButtons, IonContent, IonMenuButton, IonPage } from '@ionic/react';
-
-import { useParams } from 'react-router-dom';
 import { createQR } from '@solana/pay';
 import { useEffect, createRef } from 'react';
+
 const cashbtn_API_URL = 'solana:https://api.cashbtn.com/pay';
 
 const Checkout: React.FC = () => {
-  const params = useParams<{}>();
-  console.log(params);
-
   const qrRef = createRef<HTMLDivElement>();
   useEffect(() => {
     const qr = createQR(cashbtn_API_URL, 360, 'white', 'black');
@@ -28,8 +24,7 @@ const Checkout: React.FC = () => {
       </IonButtons>
       <IonContent>
         <div>
-          <h1>Checkout</h1>
-          <p>URL Parameter:</p>
+          <h1>Scan To Checkout:</h1>
           <div ref={qrRef} />
         </div>
       </IonContent>
