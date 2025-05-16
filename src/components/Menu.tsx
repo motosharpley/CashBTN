@@ -49,6 +49,13 @@ const Menu: React.FC = () => {
         <IonList id="inbox-list">
           <IonListHeader>CashBTN</IonListHeader>
           <IonNote>Crypto Casino</IonNote>
+          <div
+            style={{
+              marginBottom: '1rem',
+            }}
+          >
+            <appkit-button></appkit-button>
+          </div>
           {appPages.map((appPage, index) => {
             return (
               <IonMenuToggle key={index} autoHide={false}>

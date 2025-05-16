@@ -16,7 +16,6 @@ const Cashier: React.FC = () => (
     </IonHeader>
     <IonContent fullscreen>
       <h2 style={{ textAlign: 'center', marginTop: '2rem' }}>Crypto Cashier</h2>
-      {/* Add cashier functionalities here */}
     </IonContent>
   </IonPage>
 );
