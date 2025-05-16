@@ -7,7 +7,12 @@ import {
 import { IonReactRouter } from '@ionic/react-router';
 import { Redirect, Route } from 'react-router-dom';
 import Menu from './components/Menu';
-import Page from './pages/Page';
+import Cashier from './pages/Cashier';
+import Slots from './pages/Slots';
+import Bingo from './pages/Bingo';
+import Craps from './pages/Craps';
+import Poker from './pages/Poker';
+import './theme/variables.css';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -51,8 +56,20 @@ const App: React.FC = () => {
             <Route path="/" exact={true}>
               <Redirect to="/Cashier" />
             </Route>
-            <Route path="/:name" exact={true}>
-              <Page />
+            <Route path="/Cashier" exact={true}>
+              <Cashier />
+            </Route>
+            <Route path="/Slots" exact={true}>
+              <Slots />
+            </Route>
+            <Route path="/Bingo" exact={true}>
+              <Bingo />
+            </Route>
+            <Route path="/Craps" exact={true}>
+              <Craps />
+            </Route>
+            <Route path="/Poker" exact={true}>
+              <Poker />
             </Route>
           </IonRouterOutlet>
         </IonSplitPane>
