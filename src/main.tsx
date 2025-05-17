@@ -1,5 +1,5 @@
 import { createAppKit } from '@reown/appkit/react';
-import { solana, solanaDevnet } from '@reown/appkit/networks';
+import { solanaDevnet } from '@reown/appkit/networks';
 import { SolanaAdapter } from '@reown/appkit-adapter-solana/react';
 
 const projectId = '1eb834a27c25cc7627a6cf12824e1382';
@@ -7,7 +7,7 @@ const solanaAdapter = new SolanaAdapter();
 
 createAppKit({
   adapters: [solanaAdapter],
-  networks: [solana, solanaDevnet],
+  networks: [solanaDevnet],
   projectId,
   metadata: {
     name: 'CashBTN',
